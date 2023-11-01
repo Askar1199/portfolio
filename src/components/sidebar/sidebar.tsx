@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
+import "./sidebar.scss"
 
 const sidebar = () => {
   const [btn, setBtn] = useState(false);

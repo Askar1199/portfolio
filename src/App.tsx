@@ -1,6 +1,7 @@
 import { useState } from "react";
-import "./style.css";
+import "./app.scss"
 import Navbar from "./components/navbar";
+import Hero from "./components/hero/hero";
 
 function App() {
   return (
@@ -8,12 +9,13 @@ function App() {
       <header >
        <section>
          <Navbar />
+         <Hero/>
         </section>
       </header>
-      {/* <section>trials</section>
       <section>trials</section>
       <section>trials</section>
-      <section>trials</section> */}
+      <section>trials</section>
+      <section>trials</section>
     </>
   );
 }
