@@ -19,31 +19,31 @@ const project = () => {
   const items = [
     {
       id: 1,
-      title: "React Commerce",
+      title: "Restaurant webpage",
       desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, necessitatibus. Atque, excepturi tenetur tempor",
-      image:
-        "https://images.pexels.com/photos/18563109/pexels-photo-18563109/free-photo-of-a-car-is-driving-down-the-road-at-night.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      image: "/restaurant.png",
+      link: "https://askar1199.github.io/Restaurant_Website/",
     },
     {
       id: 2,
-      title: "Restsuren webpage",
+      title: "To-Do List App",
       desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, necessitatibus. Atque, excepturi tenetur tempor",
-      image:
-        "https://images.pexels.com/photos/8667620/pexels-photo-8667620.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      image: "/to_do.png",
+      link: "https://to-do-list-rho-coral.vercel.app/",
     },
     {
       id: 3,
-      title: "To-Do List App",
+      title: "Weather App",
       desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, necessitatibus. Atque, excepturi tenetur tempor",
-      image:
-        "https://images.pexels.com/photos/18503091/pexels-photo-18503091/free-photo-of-rural-life-19.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      image: "/weather.png",
+      link: "https://askar1199.github.io/Weather_App/",
     },
     {
       id: 4,
-      title: "Weather App",
+      title: "Expense Cart",
       desc: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, necessitatibus. Atque, excepturi tenetur tempor",
-      image:
-        "https://images.pexels.com/photos/17887957/pexels-photo-17887957/free-photo-of-a-person-in-a-raincoat-sitting-on-the-lakeshore.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load",
+      image: "/expense.png",
+      link: "https://askar1199.github.io/Expense_Tracker/",
     },
   ];
 
@@ -56,7 +56,9 @@ const project = () => {
           className="progressBar"
         ></motion.div>
       </div>
-      <Sections item={items} />
+      {items.map((item) => (
+        <Sections item={item} />
+      ))}
     </div>
   );
 };
