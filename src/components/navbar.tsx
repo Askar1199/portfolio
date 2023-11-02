@@ -28,10 +28,10 @@ const navbar = () => {
               href="https://www.linkedin.com/in/mohammed-askar-2aa92725a"
               target="_blank"
             >
-              <img src="/youtube.png" />
+              <img src="/linkedin.png" />
             </a>
             <a href="https://github.com/Askar1199" target="_blank">
-              <img src="/dribbble.png" />
+              <img src="/github.png" />
             </a>
           </div>
         </div>

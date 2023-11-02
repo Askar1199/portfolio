@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100&display=swap");
+.service {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .textContainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    p {
+      font-size: 18px;
+      color: gray;
+      text-align: right;
+    }
+    hr {
+      width: 450px;
+      border: none;
+      border-top: 0.5px solid gray;
+    }
+  }
+  .titleContainer {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      b:hover {
+        color: orange;
+      }
+      img {
+        width: 300px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50px;
+      }
+      h1 {
+        font-size: 70px;
+        font-family: "DM Sans", sans-serif;
+        font-weight: 100;
+      }
+      button {
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        background-color: orange;
+        border: none;
+        font-size: 24px;
+      }
+    }
+  }
+  .listContainer {
+    flex: 2;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+
+    .box {
+      padding: 50px;
+      border: 0.5px solid gray;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      transition: 0.3s;
+      button {
+        padding: 10px;
+        border: none;
+        background-color: orange;
+        cursor: pointer;
+        font-weight: 600;
+      }
+    }
+  }
+}
