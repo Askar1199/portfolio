@@ -22,7 +22,7 @@ const variants = {
 const service = () => {
   const refs = useRef() as React.MutableRefObject<HTMLDivElement>;
 
-  const isInView = useInView(refs, { margin: "-100px" });
+  const isInView = useInView(refs, { margin: "-200px" });
   return (
     <motion.div
       className="service"
