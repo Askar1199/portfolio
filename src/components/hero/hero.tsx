@@ -69,7 +69,12 @@ const hero = () => {
             />
           </motion.div>
         </div>
-        <motion.div className="slideText" variants={slideV} initial="initial" animate="animate" >
+        <motion.div
+          className="slideText"
+          variants={slideV}
+          initial="initial"
+          animate="animate"
+        >
           Frontend Developer
         </motion.div>
         <div className="imageCont">

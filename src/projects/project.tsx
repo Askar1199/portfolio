@@ -57,7 +57,7 @@ const project = () => {
         ></motion.div>
       </div>
       {items.map((item) => (
-        <Sections item={item} />
+        <Sections item={item} key={item.id} />
       ))}
     </div>
   );
