@@ -7,6 +7,7 @@ import Service from "./components/serviceC/service";
 import Projects from "./projects";
 import Contact from "./components/contact/contact";
 import Cursor from "./components/cursor";
+import {Route,Routes} from "react-router-dom"
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
       <div>
         <Cursor />
         <header>
-          <section id="home">
+          <section >
             <Navbar />
             <Hero />
           </section>
@@ -29,7 +30,7 @@ function App() {
           <Parallax type="portfolio" />
         </section>
         <Projects />
-        <section>
+        <section >
           <Contact />
         </section>
       </div>

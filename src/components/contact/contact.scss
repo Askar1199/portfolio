@@ -37,10 +37,17 @@
 
             input,textarea{
                 padding: 20px;
+                width: 100%;
                 background-color: transparent;
                 border: 1px solid white;
                 color: white;
                 border-radius: 5px;
+            }
+            .error{
+                border-color: red;
+            }
+            .error_message{
+                color: red;
             }
             button{
                 padding: 20px;
