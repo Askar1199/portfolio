@@ -12,6 +12,9 @@
     padding: 10px;
     padding-top: 60px;
   }
+  @include tablet {
+    padding: 0 20px;
+  }
 
   .textContainer {
     flex: 1;
@@ -44,21 +47,32 @@
       padding: 10px;
     }
 
+    @include tablet {
+      width: 100%;
+    }
+
     .phoneSvg {
       stroke: orange;
       position: absolute;
       margin: auto;
       z-index: -1;
-      @include mobile{
-            width: 93%;
-            .path{
-                max-width: 100%;
-                object-fit: cover;
-                height: 300px;
-            }
-          }
-         
-          
+      @include mobile {
+        width: 93%;
+        .path {
+          max-width: 100%;
+          object-fit: cover;
+          height: 300px;
+        }
+      }
+
+      @include tablet {
+        width: 93%;
+        .path {
+          max-width: 100%;
+          object-fit: cover;
+          height: 300px;
+        }
+      }
     }
     form {
       display: flex;

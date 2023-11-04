@@ -19,13 +19,13 @@ function App() {
           <Hero />
         </section>
       </header>
-      <section>
+      <section className="parallaxCont">
         <Parallax type="services" />
       </section>
-      <section>
+      <section className="serviceCont">
         <Service />
       </section>
-      <section>
+      <section className="parallaxCont">
         <Parallax type="portfolio" />
       </section>
       <Projects />

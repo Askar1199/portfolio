@@ -23,6 +23,13 @@
         align-items: center;
         text-align: center;
       }
+      @media (max-width: 1024px) and (min-width: 739px){
+    height: 75%;
+        width: 100%;
+        gap: 30px;
+        align-items: center;
+        text-align: center;
+  }
       img {
         width: 50px;
       }
@@ -37,7 +44,7 @@
           font-size: 36px;
         }
       }
-      button {
+      button,a {
         padding: 20px;
         border: 1px solid white;
         border-radius: 10px;
@@ -45,6 +52,8 @@
         color: white;
         margin-right: 20px;
         cursor: pointer;
+        position: relative;
+        z-index: 1;
       }
     }
   }
@@ -60,11 +69,15 @@
       top: unset;
       bottom: 0;
     }
+
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       display: none;
+      @include tablet{
+        display: none;
+      }
     }
   }
   .slideText {

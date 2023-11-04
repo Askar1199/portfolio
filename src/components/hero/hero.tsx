@@ -1,4 +1,5 @@
 import { motion, Variants } from "framer-motion";
+import React from "react";
 import "./hero.scss";
 
 const textV = {
@@ -40,6 +41,20 @@ const slideV: Variants = {
 };
 
 const hero = () => {
+   const handleDownload = (
+     event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+   ) => {
+     event.preventDefault();
+
+     const resumePath = "/Askar_resume.pdf"; // Update the path accordingly
+     const link = document.createElement("a");
+     link.href = resumePath;
+     link.download = "AskarResume.pdf";
+     document.body.appendChild(link);
+     link.click();
+     document.body.removeChild(link);
+   };
+
   return (
     <>
       <div className="hero">
@@ -55,9 +70,9 @@ const hero = () => {
               Web developer and UI designer
             </motion.h1>
             <motion.div className="btns" variants={textV}>
-              <motion.button variants={textV}>
-                See The Latest Works
-              </motion.button>
+              <motion.a href="#" variants={textV} onClick={handleDownload}>
+                Download Resume
+              </motion.a>
               <motion.button variants={textV}>Contact Me</motion.button>
             </motion.div>
             <motion.img
