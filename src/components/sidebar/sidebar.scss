@@ -1,3 +1,4 @@
+@import "../../app.scss";
 .sidebar {
   display: flex;
   flex-direction: column;
@@ -15,6 +16,9 @@
   bottom: 0;
   width: 350px;
   background: white;
+  @include mobile{
+    width: 100%;
+  }
   .links {
     position: absolute;
     width: 100%;

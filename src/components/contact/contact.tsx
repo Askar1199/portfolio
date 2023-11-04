@@ -5,7 +5,7 @@ import emailjs from "emailjs-com";
 import { EmailjsConfig } from "../emailjs";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css"
+import "react-toastify/dist/ReactToastify.css";
 
 const variants = {
   initial: {
@@ -56,17 +56,16 @@ const contact = () => {
       // Reset the form after successful submission
       reset();
 
-       toast.success("Email sent successfully!", {
-         autoClose: 5000,
-         style: { background: "#022507", color: "#ffffff" }, // Customize style for success
-       });
+      toast.success("Email sent successfully!", {
+        autoClose: 5000,
+        style: { background: "#022507", color: "#ffffff" }, // Customize style for success
+      });
     } catch (error) {
       console.error("Error sending email:", error);
       toast.error("Sorry! Mail not sent.", {
         autoClose: 5000,
         style: { background: "#e74c3c", color: "#ffffff" }, // Customize style for error
       });
-
     }
   };
 
@@ -110,12 +109,12 @@ const contact = () => {
               height="450px"
               viewBox="0 0 352 254"
               fill="none"
+              className="path"
             >
               <motion.path
-                // strokeWidth={0.2}
                 initial={{ pathLength: 0 }}
                 animate={inView && { pathLength: 1 }}
-                transition={{ duration: 10 }}
+                transition={{ duration: 12 }}
                 viewport={{ once: true }}
                 d="M352 0H66V79.375H0V254H154V206.375H352V0ZM132 15.875H330V31.75H132V15.875ZM88 15.875H110V31.75H88V15.875ZM88 238.125H66V222.25H88V238.125ZM132 206.375H22V95.25H132V206.375ZM330 190.5H154V79.375H88V47.625H330V190.5Z"
                 fill="none"

@@ -7,33 +7,31 @@ import Service from "./components/serviceC/service";
 import Projects from "./projects";
 import Contact from "./components/contact/contact";
 import Cursor from "./components/cursor";
-import {Route,Routes} from "react-router-dom"
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <div>
-        <Cursor />
-        <header>
-          <section >
-            <Navbar />
-            <Hero />
-          </section>
-        </header>
+      <Cursor />
+      <header>
         <section>
-          <Parallax type="services" />
+          <Navbar />
+          <Hero />
         </section>
-        <section>
-          <Service />
-        </section>
-        <section>
-          <Parallax type="portfolio" />
-        </section>
-        <Projects />
-        <section >
-          <Contact />
-        </section>
-      </div>
+      </header>
+      <section>
+        <Parallax type="services" />
+      </section>
+      <section>
+        <Service />
+      </section>
+      <section>
+        <Parallax type="portfolio" />
+      </section>
+      <Projects />
+      <section>
+        <Contact />
+      </section>
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import "./hero.scss";
 
 const textV = {
@@ -9,22 +9,22 @@ const textV = {
   animate: {
     x: 0,
     opacity: 1,
-    transition:{
-        duration:1,
-        staggerChildren:0.1,
-    }
+    transition: {
+      duration: 1,
+      staggerChildren: 0.1,
+    },
   },
-  scrollBtn:{
-    opacity:0,
-    y:10,
-    transition:{
-        duration:2,
-        repeat:Infinity
-    }
-  }
+  scrollBtn: {
+    opacity: 0,
+    y: 10,
+    transition: {
+      duration: 2,
+      repeat: Infinity,
+    },
+  },
 };
 
-const slideV = {
+const slideV: Variants = {
   initial: {
     x: 0,
   },
@@ -33,12 +33,11 @@ const slideV = {
     opacity: 1,
     transition: {
       duration: 20,
-      repeat:Infinity,
-      repeatType:"mirror"
+      repeat: Infinity,
+      repeatType: "mirror",
     },
   },
 };
-
 
 const hero = () => {
   return (

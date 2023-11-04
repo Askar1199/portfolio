@@ -49,8 +49,16 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media (max-width: 738px) {
+      justify-content: flex-end;
+      padding: 20px;
+    }
     span {
       font-weight: bold;
+
+      @media (max-width: 738px) {
+        display: none;
+      }
     }
     .social {
       display: flex;
@@ -60,5 +68,17 @@ ul {
         height: 20px;
       }
     }
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 738px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
   }
 }
