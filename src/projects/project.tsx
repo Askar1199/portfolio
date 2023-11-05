@@ -48,7 +48,7 @@ const project = () => {
   ];
 
   return (
-    <div className="project" ref={refs}>
+    <div className="project" ref={refs} id="Projects">
       <div className="progress">
         <h1>Featured works</h1>
         <motion.div

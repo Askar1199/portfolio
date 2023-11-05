@@ -1,7 +1,6 @@
 import { motion, useInView } from "framer-motion";
 import "./service.scss";
-import { useRef } from "react";
-
+// import { useRef } from "react";
 
 const variants = {
   initial: {
@@ -20,8 +19,6 @@ const variants = {
   },
 };
 
-  
-
 const service = () => {
   // const refs = useRef() as React.MutableRefObject<HTMLDivElement>;
 
@@ -33,7 +30,7 @@ const service = () => {
       initial="initial"
       whileInView={"animate"}
       // ref={refs}
-      animate={"animate"}
+      // animate={isInView && "animate"}
       viewport={{ once: true }}
     >
       <motion.div className="textContainer" variants={variants}>
@@ -47,14 +44,14 @@ const service = () => {
         <div className="title">
           <img src="./people.webp" alt="" />
           <h1>
-            <b>Unique</b> Ideas
+            <b>Design</b> and
           </h1>
         </div>
         <div className="title">
           <h1>
-            <b>For Your </b>Business
+            <b>Development </b>skills
           </h1>
-          <button>What We Do?</button>
+          <button>What I Do?</button>
         </div>
       </motion.div>
       <div className="skills">

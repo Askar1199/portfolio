@@ -67,7 +67,7 @@ const hero = () => {
           >
             <motion.h2 variants={textV}>Mohammed Askar</motion.h2>
             <motion.h1 variants={textV}>
-              Web developer and UI designer
+              Web designer and React developer
             </motion.h1>
             <motion.div className="btns" variants={textV}>
               <motion.a href="#" variants={textV} onClick={handleDownload}>

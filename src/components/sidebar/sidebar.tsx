@@ -4,7 +4,7 @@ import "./sidebar.scss"
 
 const sidebar = () => {
   const [btn, setBtn] = useState(false);
-  const items =["Home","Services","Projects","Contact","About"]
+  const items =["Home","Skills","Projects","Contact","About"]
 
   const click = () => {
     setBtn((current) => !current);
@@ -33,7 +33,7 @@ const sidebar = () => {
       <motion.div className="sidebar" animate={btn ? "open" : "closed"}>
         <motion.div className="bg" variants={varients}>
           <div className="links">{items.map((map,ind)=>(
-            <a href={`/${map}`} key={ind}>{map}</a>
+            <a href={`#${map}`} key={ind}>{map}</a>
           ))}</div>
         </motion.div>
 

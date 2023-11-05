@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./app.scss";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero/hero";
@@ -14,7 +13,7 @@ function App() {
     <>
       <Cursor />
       <header>
-        <section>
+        <section id="Home">
           <Navbar />
           <Hero />
         </section>
@@ -22,14 +21,14 @@ function App() {
       <section className="parallaxCont">
         <Parallax type="services" />
       </section>
-      <section className="serviceCont">
+      <section className="serviceCont" id="Skills">
         <Service />
       </section>
       <section className="parallaxCont">
         <Parallax type="portfolio" />
       </section>
       <Projects />
-      <section>
+      <section id="Contact">
         <Contact />
       </section>
     </>
