@@ -45,7 +45,7 @@ const parallax = ({ type }: props) => {
         style={{
           y: Ybg,
           backgroundImage: `url(${
-            type === "services" ? "/planets.png" : "/sun.png"
+            type === "services" ? "./planets.png" : "./sun.png"
           })`,
         }}
         className="planets"
