@@ -73,7 +73,7 @@ const hero = () => {
               <motion.a href="#" variants={textV} onClick={handleDownload}>
                 Download Resume
               </motion.a>
-              <motion.button variants={textV}>Contact Me</motion.button>
+              <motion.a href="#Contact" variants={textV}>Contact Me</motion.a>
             </motion.div>
             <motion.img
               src="./scroll.png"

@@ -85,7 +85,7 @@ const service = () => {
                 />
               </svg>
             </div>
-            <button>Go</button>
+            {/* <button>Go</button> */}
           </motion.div>
           <motion.div className="box">
             <h2>CSS</h2>
@@ -124,7 +124,7 @@ const service = () => {
               </svg>
             </div>
 
-            <button>Go</button>
+            {/* <button>Go</button> */}
           </motion.div>
           <motion.div className="box">
             <h2>Sass</h2>
@@ -144,7 +144,7 @@ const service = () => {
                 />
               </svg>
             </div>
-            <button>Go</button>
+            {/* <button>Go</button> */}
           </motion.div>
           <motion.div className="box">
             <h2>Bootstrap</h2>
@@ -231,7 +231,7 @@ const service = () => {
                 </defs>
               </svg>
             </div>
-            <button>Go</button>
+            {/* <button>Go</button> */}
           </motion.div>
         </motion.div>
         <motion.div className="listContainer" variants={variants}>
@@ -251,7 +251,7 @@ const service = () => {
                 />
               </svg>
             </div>
-            <button>Go</button>
+            {/* <button>Go</button> */}
           </motion.div>
           <motion.div className="box">
             <h2>Jquery</h2>
@@ -269,7 +269,7 @@ const service = () => {
                 />
               </svg>
             </div>
-            <button>Go</button>
+            {/* <button>Go</button> */}
           </motion.div>
           <motion.div className="box">
             <h2>React</h2>
@@ -291,7 +291,7 @@ const service = () => {
                 />
               </svg>
             </div>
-            <button>Go</button>
+            {/* <button>Go</button> */}
           </motion.div>
           <motion.div className="box">
             <h2>Typescript</h2>
@@ -313,7 +313,7 @@ const service = () => {
                 />
               </svg>
             </div>
-            <button>Go</button>
+            {/* <button>Go</button> */}
           </motion.div>
         </motion.div>
       </div>

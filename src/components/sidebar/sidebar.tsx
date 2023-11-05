@@ -4,7 +4,7 @@ import "./sidebar.scss"
 
 const sidebar = () => {
   const [btn, setBtn] = useState(false);
-  const items =["Home","Skills","Projects","Contact","About"]
+  const items =["Home","Skills","Projects","Contact"]
 
   const click = () => {
     setBtn((current) => !current);
