@@ -32,6 +32,7 @@ const sidebar = () => {
       },
     },
   };
+  
   return (
     <>
       <motion.div className="sidebar" animate={btn ? "open" : "closed"}>

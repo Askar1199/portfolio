@@ -26,7 +26,7 @@ const navbar = () => {
               <img src="./instagram.png" />
             </a>
             <a
-              href="https://www.linkedin.com/in/mohammed-askar-2aa92725a"
+              href="http://www.linkedin.com/in/mohammed-askar-79984b299"
               target="_blank"
             >
               <img src="./linkedin.png" />
