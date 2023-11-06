@@ -10,6 +10,10 @@ const sidebar = () => {
     setBtn((current) => !current);
   };
 
+  const closeSidebar = () => {
+    setBtn((current) => !current);
+  };
+
   const varients = {
     open: {
       clipPath: "circle(1200px at 50px 50px)",
@@ -32,9 +36,13 @@ const sidebar = () => {
     <>
       <motion.div className="sidebar" animate={btn ? "open" : "closed"}>
         <motion.div className="bg" variants={varients}>
-          <div className="links">{items.map((map,ind)=>(
-            <a href={`#${map}`} key={ind}>{map}</a>
-          ))}</div>
+          <div className="links">
+            {items.map((map, ind) => (
+              <a href={`#${map}`} key={ind} onClick={closeSidebar}>
+                {map}
+              </a>
+            ))}
+          </div>
         </motion.div>
 
         <button className="buttons" onClick={click}>
