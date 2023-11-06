@@ -4,7 +4,7 @@ import "./service.scss";
 
 const variants = {
   initial: {
-    x: -500,
+    x: -200, //initial -500 changed to -200 for responsive
     y: 100,
     opacity: 0,
   },
@@ -30,7 +30,7 @@ const service = () => {
       initial="initial"
       whileInView={"animate"}
       // ref={refs}
-      // animate={isInView && "animate"}
+      // animate={ "animate"}
       viewport={{ once: true }}
     >
       <motion.div className="textContainer" variants={variants}>

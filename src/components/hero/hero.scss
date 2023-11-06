@@ -22,14 +22,15 @@
         gap: 20px;
         align-items: center;
         text-align: center;
+        margin-top: 100px;
       }
-      @media (max-width: 1024px) and (min-width: 739px){
-    height: 75%;
+      @media (max-width: 1024px) and (min-width: 739px) {
+        height: 75%;
         width: 100%;
         gap: 30px;
         align-items: center;
         text-align: center;
-  }
+      }
       img {
         width: 50px;
       }
@@ -42,6 +43,13 @@
         font-size: 70px;
         @include mobile {
           font-size: 36px;
+        }
+      }
+      .btns {
+        @include mobile {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
         }
       }
       a {
@@ -75,7 +83,7 @@
       height: 100%;
       object-fit: cover;
       display: none;
-      @include tablet{
+      @include tablet {
         display: none;
       }
     }
