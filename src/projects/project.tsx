@@ -56,9 +56,11 @@ const project = () => {
           className="progressBar"
         ></motion.div>
       </div>
-      {items.map((item) => (
-        <Sections item={item} key={item.id} />
-      ))}
+      <div className="prdSecContainer">
+        {items.map((item) => (
+          <Sections item={item} key={item.id} />
+        ))}
+      </div>
     </div>
   );
 };

@@ -27,7 +27,7 @@ const sections = ({ item }: props) => {
 
   return (
     <>
-       <section key={item.id}>
+       <section key={item.id} className="sectionProjects">
           <div className="container">
             <div className="wrapper" >
               <div className="imgContainer" ref={refs}>
