@@ -59,7 +59,7 @@ const service = () => {
           <motion.div className="box">
             <h2>HTML 5</h2>
 
-            <div>
+            <div className="svgContainer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="150"
@@ -89,7 +89,7 @@ const service = () => {
           </motion.div>
           <motion.div className="box">
             <h2>CSS</h2>
-            <div>
+            <div className="svgContainer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="150"
@@ -128,7 +128,7 @@ const service = () => {
           </motion.div>
           <motion.div className="box">
             <h2>Sass</h2>
-            <div>
+            <div className="svgContainer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="150"
@@ -148,7 +148,7 @@ const service = () => {
           </motion.div>
           <motion.div className="box">
             <h2>Bootstrap</h2>
-            <div>
+            <div className="svgContainer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="150"
@@ -237,7 +237,7 @@ const service = () => {
         <motion.div className="listContainer" variants={variants}>
           <motion.div className="box">
             <h2>Javascript</h2>
-            <div>
+            <div className="svgContainer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="150"
@@ -255,7 +255,7 @@ const service = () => {
           </motion.div>
           <motion.div className="box">
             <h2>Jquery</h2>
-            <div>
+            <div className="svgContainer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="150"
@@ -273,7 +273,7 @@ const service = () => {
           </motion.div>
           <motion.div className="box">
             <h2>React</h2>
-            <div>
+            <div className="svgContainer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="148"
@@ -295,7 +295,7 @@ const service = () => {
           </motion.div>
           <motion.div className="box">
             <h2>Typescript</h2>
-            <div>
+            <div className="svgContainer">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="150"
