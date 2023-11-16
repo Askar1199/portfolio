@@ -92,7 +92,7 @@ const hero = () => {
           Frontend Developer
         </motion.div>
         <div className="imageCont">
-          <img src="./hero.png" alt="hero image" />
+          <img src="./heroPic.png" alt="hero image" />
         </div>
       </div>
     </>
