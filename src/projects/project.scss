@@ -10,6 +10,7 @@
     padding-top: 50px;
     color: orange;
     z-index: 1;
+    backdrop-filter: blur(15px);
 
     @include mobile {
       // padding-top: calc(100vh - 100px);
