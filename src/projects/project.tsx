@@ -45,6 +45,13 @@ const project = () => {
       image: "./expense.png",
       link: "https://askar1199.github.io/Expense_Tracker/",
     },
+    {
+      id: 5,
+      title: "Age Calculator",
+      desc: "HTML | SCSS | BOOTSTRAP | REACT | TYPESCRIPT | JAVASCRIPT",
+      image: "./ageCalc.png",
+      link: "https://age-calculator-vqpj.vercel.app/",
+    },
   ];
 
   return (
