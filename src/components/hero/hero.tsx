@@ -46,10 +46,10 @@ const hero = () => {
    ) => {
      event.preventDefault();
 
-     const resumePath = "./MohammedAskarResume.pdf"; // Update the path accordingly
+     const resumePath = "./askar__Resume.pdf"; // Update the path accordingly
      const link = document.createElement("a");
      link.href = resumePath;
-     link.download = "AskarResume.pdf";
+     link.download = "askar__Resume.pdf";
      document.body.appendChild(link);
      link.click();
      document.body.removeChild(link);
